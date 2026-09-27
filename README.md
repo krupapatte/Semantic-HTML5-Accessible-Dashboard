@@ -1,73 +1,48 @@
-# Semantic HTML5 Accessible Enterprise Dashboard
+# Semantic HTML5 Accessible Dashboard
 
 ## About the Project
 
-This project is an accessible enterprise dashboard created as part of my learning and practice in web development.
+This is a web dashboard project I created as part of my third-year studies. The main goal of the project is to build a simple enterprise dashboard using semantic HTML5, CSS, and JavaScript while keeping accessibility in mind.
 
-I am a 3rd-year student, and I built this project to understand how Semantic HTML5, CSS, JavaScript, and accessibility practices can be used to create a user-friendly dashboard.
+The dashboard has separate pages for Overview, Reports, Team, and Settings. I added features like report search, report creation, profile popup, and settings form.
 
-The main focus of this project is to make the dashboard easy to use for different users, including users who depend on keyboard navigation or screen readers.
-
-## Features
-
-- Semantic HTML5 structure
-- Responsive dashboard design
-- Accessible navigation and forms
-- Keyboard-friendly interface
-- Skip navigation link
-- Accessible tables with proper headings
-- Create Report form
-- Profile dialog
-- Search reports functionality
-- Form validation
-- Responsive layout for different screen sizes
+I also wanted to understand how AI can be used in dashboards in the future. Some possible uses are generating report summaries, finding useful patterns in data, and giving simple insights to users. These AI features are planned for future development; the current project mainly focuses on frontend design and accessibility.
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
+- Semantic HTML5
+- WCAG 2.1 accessibility practices
+- Responsive design
 - Git and GitHub
-- VS Code
-- Live Server
 
-## Accessibility
+## Features
 
-I followed some basic WCAG 2.1 accessibility practices while developing this project.
-
-Some of the accessibility features include:
-
-- Proper heading structure
-- Semantic HTML elements
-- Labels for form fields
-- Keyboard navigation
+- Multi-page dashboard
+- Semantic HTML5 structure
+- Responsive layout
+- Accessible navigation
+- Reports page with search
+- Team members page
+- Settings page
+- Create Report popup
+- Profile popup
+- Accessible forms and tables
+- Keyboard-friendly controls
 - Visible focus indicators
-- Alternative text where required
-- Accessible buttons and dialogs
-- Proper table structure
+- Skip-to-content link
+- W3C HTML validation
 
-## AI Assistance
+## Project Structure
 
-I also used AI tools as a learning and development support while working on this project.
-
-AI assistance was mainly used for:
-- Understanding HTML5 semantic elements
-- Learning accessibility concepts
-- Debugging and improving code
-- Getting suggestions for project structure
-- Understanding Git and GitHub commands
-
-I reviewed and tested the code myself and made changes based on the requirements of the project.
-
-## How to Run
-
-1. Download or clone this repository.
-2. Open the project folder in VS Code.
-3. Open `index.html`.
-4. Run the project using Live Server.
-5. Open the displayed localhost URL in a browser.
-
-## Project Validation
-
-The HTML code can be checked using the W3C Markup Validation Service.
-The goal is to keep the HTML syntax free from validation errors.
+```text
+index.html
+reports.html
+team.html
+settings.html
+styles.css
+script.js
+README.md
+.gitignore
