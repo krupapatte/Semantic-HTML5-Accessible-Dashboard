@@ -1,52 +1,73 @@
-# Semantic HTML5 & Accessible Component Architecture
+# Semantic HTML5 Accessible Enterprise Dashboard
 
-## Assignment
-Build the structural foundation for an enterprise dashboard using semantic HTML5, WCAG 2.1 accessibility practices, and a structured DOM hierarchy.
+## About the Project
 
-## Included requirements
+This project is an accessible enterprise dashboard created as part of my learning and practice in web development.
 
-- Semantic HTML5: header, nav, main, section, article, aside and footer
-- Accessible navigation header and sidebar
-- Enterprise dashboard layout
-- Accessible data table with caption, column headers and row headers
-- Accessible modal dialogs
-- Form labels, fieldsets, legends and validation attributes
-- Keyboard-friendly controls and visible focus states
-- Skip-to-content link
-- Responsive desktop/tablet/mobile layout
-- Live status message for form submission
-- Separate HTML, CSS and JavaScript files
+I am a 3rd-year student, and I built this project to understand how Semantic HTML5, CSS, JavaScript, and accessibility practices can be used to create a user-friendly dashboard.
 
-## Run in VS Code
+The main focus of this project is to make the dashboard easy to use for different users, including users who depend on keyboard navigation or screen readers.
 
-1. Extract the ZIP.
-2. Open the extracted folder in VS Code.
+## Features
+
+- Semantic HTML5 structure
+- Responsive dashboard design
+- Accessible navigation and forms
+- Keyboard-friendly interface
+- Skip navigation link
+- Accessible tables with proper headings
+- Create Report form
+- Profile dialog
+- Search reports functionality
+- Form validation
+- Responsive layout for different screen sizes
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Git and GitHub
+- VS Code
+- Live Server
+
+## Accessibility
+
+I followed some basic WCAG 2.1 accessibility practices while developing this project.
+
+Some of the accessibility features include:
+
+- Proper heading structure
+- Semantic HTML elements
+- Labels for form fields
+- Keyboard navigation
+- Visible focus indicators
+- Alternative text where required
+- Accessible buttons and dialogs
+- Proper table structure
+
+## AI Assistance
+
+I also used AI tools as a learning and development support while working on this project.
+
+AI assistance was mainly used for:
+- Understanding HTML5 semantic elements
+- Learning accessibility concepts
+- Debugging and improving code
+- Getting suggestions for project structure
+- Understanding Git and GitHub commands
+
+I reviewed and tested the code myself and made changes based on the requirements of the project.
+
+## How to Run
+
+1. Download or clone this repository.
+2. Open the project folder in VS Code.
 3. Open `index.html`.
-4. Install the VS Code extension **Live Server** if you want a local server.
-5. Right-click `index.html` and select **Open with Live Server**.
+4. Run the project using Live Server.
+5. Open the displayed localhost URL in a browser.
 
-You can also open `index.html` directly in Chrome.
+## Project Validation
 
-## Validation
-
-Before submission, validate `index.html` using the W3C HTML Validator:
-https://validator.w3.org/nu/
-
-The assignment asks for zero HTML syntax errors.
-
-## GitHub upload
-
-Open the VS Code terminal in this project folder:
-
-```bash
-git init
-git add .
-git commit -m "Complete semantic HTML5 accessible dashboard"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/Semantic-HTML5-Accessible-Dashboard.git
-git push -u origin main
-```
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
-Make the GitHub repository **Public** before submitting the repository link.
+The HTML code can be checked using the W3C Markup Validation Service.
+The goal is to keep the HTML syntax free from validation errors.
