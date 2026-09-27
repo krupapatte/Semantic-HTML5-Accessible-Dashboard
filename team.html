@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enterprise team members dashboard.">
+  <title>Team - Enterprise Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">EA</div>
+      <div>
+        <p class="eyebrow">Enterprise</p>
+        <h1>Analytics Dashboard</h1>
+      </div>
+    </div>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="team.html" aria-current="page">Team</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn secondary" id="profileBtn" type="button">
+      Profile
+    </button>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Dashboard sidebar">
+      <h2>Workspace</h2>
+
+      <nav aria-label="Workspace navigation">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="reports.html">Reports</a></li>
+          <li><a class="active" href="team.html">Team members</a></li>
+          <li><a href="settings.html">Preferences</a></li>
+        </ul>
+      </nav>
+
+      <section class="help-box" aria-labelledby="help-heading">
+        <h2 id="help-heading">Need help?</h2>
+        <p>Use the keyboard or review the accessibility guide.</p>
+        <a href="index.html#accessibility">Accessibility guide</a>
+      </section>
+    </aside>
+
+    <main id="main-content" tabindex="-1">
+
+      <section aria-labelledby="team-heading">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Team</p>
+            <h2 id="team-heading">Team members</h2>
+            <p>People working on the enterprise dashboard.</p>
+          </div>
+        </div>
+
+        <div class="team-grid">
+
+          <article class="person">
+            <div class="avatar" aria-hidden="true">AM</div>
+            <div>
+              <h3>Aarav Mehta</h3>
+              <p>Product Manager</p>
+            </div>
+          </article>
+
+          <article class="person">
+            <div class="avatar" aria-hidden="true">SK</div>
+            <div>
+              <h3>Sofia Khan</h3>
+              <p>Data Analyst</p>
+            </div>
+          </article>
+
+          <article class="person">
+            <div class="avatar" aria-hidden="true">RJ</div>
+            <div>
+              <h3>Rohan Joshi</h3>
+              <p>Engineering Lead</p>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Enterprise Analytics Dashboard.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

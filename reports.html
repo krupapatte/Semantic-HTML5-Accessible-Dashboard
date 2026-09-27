@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enterprise reports dashboard with accessible tables and search.">
+  <title>Reports - Enterprise Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">EA</div>
+      <div>
+        <p class="eyebrow">Enterprise</p>
+        <h1>Analytics Dashboard</h1>
+      </div>
+    </div>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="reports.html" aria-current="page">Reports</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn secondary" id="profileBtn" type="button">
+      Profile
+    </button>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Dashboard sidebar">
+      <h2>Workspace</h2>
+
+      <nav aria-label="Workspace navigation">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a class="active" href="reports.html">Reports</a></li>
+          <li><a href="team.html">Team members</a></li>
+          <li><a href="settings.html">Preferences</a></li>
+        </ul>
+      </nav>
+
+      <section class="help-box" aria-labelledby="help-heading">
+        <h2 id="help-heading">Need help?</h2>
+        <p>Use the keyboard or review the accessibility guide.</p>
+        <a href="index.html#accessibility">Accessibility guide</a>
+      </section>
+    </aside>
+
+    <main id="main-content" tabindex="-1">
+
+      <section aria-labelledby="reports-heading">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reports</p>
+            <h2 id="reports-heading">Recent activity</h2>
+            <p>View and search recent enterprise reports.</p>
+          </div>
+
+          <div class="search">
+            <label for="reportSearch">Search reports</label>
+            <input
+              id="reportSearch"
+              type="search"
+              placeholder="Search by name"
+            >
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Recent enterprise reports</caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Report</th>
+                <th scope="col">Owner</th>
+                <th scope="col">Updated</th>
+                <th scope="col">Status</th>
+                <th scope="col">
+                  <span class="sr-only">Action</span>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody id="reportTable">
+              <tr>
+                <th scope="row">Quarterly Revenue</th>
+                <td>Finance</td>
+                <td>Today</td>
+                <td>
+                  <span class="status complete">Complete</span>
+                </td>
+                <td>
+                  <button class="link-btn view-btn" type="button">
+                    View
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Customer Growth</th>
+                <td>Marketing</td>
+                <td>Yesterday</td>
+                <td>
+                  <span class="status complete">Complete</span>
+                </td>
+                <td>
+                  <button class="link-btn view-btn" type="button">
+                    View
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Support Performance</th>
+                <td>Operations</td>
+                <td>Sep 25, 2026</td>
+                <td>
+                  <span class="status review">In review</span>
+                </td>
+                <td>
+                  <button class="link-btn view-btn" type="button">
+                    View
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Product Adoption</th>
+                <td>Product</td>
+                <td>Sep 24, 2026</td>
+                <td>
+                  <span class="status scheduled">Scheduled</span>
+                </td>
+                <td>
+                  <button class="link-btn view-btn" type="button">
+                    View
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Enterprise Analytics Dashboard.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

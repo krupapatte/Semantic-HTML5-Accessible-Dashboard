@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enterprise dashboard notification and report preferences.">
+  <title>Settings - Enterprise Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">EA</div>
+      <div>
+        <p class="eyebrow">Enterprise</p>
+        <h1>Analytics Dashboard</h1>
+      </div>
+    </div>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="settings.html" aria-current="page">Settings</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn secondary" id="profileBtn" type="button">
+      Profile
+    </button>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Dashboard sidebar">
+      <h2>Workspace</h2>
+
+      <nav aria-label="Workspace navigation">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="reports.html">Reports</a></li>
+          <li><a href="team.html">Team members</a></li>
+          <li><a class="active" href="settings.html">Preferences</a></li>
+        </ul>
+      </nav>
+
+      <section class="help-box" aria-labelledby="help-heading">
+        <h2 id="help-heading">Need help?</h2>
+        <p>Use the keyboard or review the accessibility guide.</p>
+        <a href="index.html#accessibility">Accessibility guide</a>
+      </section>
+    </aside>
+
+    <main id="main-content" tabindex="-1">
+
+      <section aria-labelledby="settings-heading">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Settings</p>
+            <h2 id="settings-heading">Notification preferences</h2>
+            <p>Manage your dashboard notification settings.</p>
+          </div>
+        </div>
+
+        <form id="settingsForm">
+
+          <fieldset>
+            <legend>Email notifications</legend>
+
+            <div class="form-row">
+              <label for="email">Work email</label>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                aria-describedby="emailHelp"
+              >
+
+              <small id="emailHelp">
+                Use your company email address.
+              </small>
+            </div>
+
+            <div class="checkbox-row">
+              <input
+                id="weekly"
+                name="weekly"
+                type="checkbox"
+                checked
+              >
+
+              <label for="weekly">
+                Send me a weekly performance summary
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Report frequency</legend>
+
+            <div class="form-row">
+              <label for="frequency">Choose frequency</label>
+
+              <select id="frequency" name="frequency">
+                <option value="daily">Daily</option>
+                <option value="weekly" selected>Weekly</option>
+                <option value="monthly">Monthly</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <button class="btn primary" type="submit">
+            Save preferences
+          </button>
+
+          <p id="formMessage" role="status" aria-live="polite"></p>
+
+        </form>
+
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Enterprise Analytics Dashboard.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
