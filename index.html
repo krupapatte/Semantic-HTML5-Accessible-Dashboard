@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible enterprise dashboard using semantic HTML5 and WCAG 2.1 practices.">
+  <title>Enterprise Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">EA</div>
+      <div>
+        <p class="eyebrow">Enterprise</p>
+        <h1>Analytics Dashboard</h1>
+      </div>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <ul class="primary-nav">
+        <li><a href="#overview" aria-current="page">Overview</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn secondary" id="profileBtn" type="button">Profile</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Dashboard sidebar">
+      <h2>Workspace</h2>
+      <nav aria-label="Workspace navigation">
+        <ul>
+          <li><a class="active" href="#overview">Dashboard</a></li>
+          <li><a href="#reports">Reports</a></li>
+          <li><a href="#team">Team members</a></li>
+          <li><a href="#settings">Preferences</a></li>
+        </ul>
+      </nav>
+
+      <section class="help-box" aria-labelledby="help-heading">
+        <h2 id="help-heading">Need help?</h2>
+        <p>Use the keyboard or review the accessibility guide.</p>
+        <a href="#accessibility">Accessibility guide</a>
+      </section>
+    </aside>
+
+    <main id="main-content" tabindex="-1">
+      <section id="overview" aria-labelledby="overview-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Overview</p>
+            <h2 id="overview-heading">Business performance</h2>
+            <p>Summary of current enterprise activity.</p>
+          </div>
+          <button class="btn primary" id="reportBtn" type="button">Create report</button>
+        </div>
+
+        <div class="metrics">
+          <article class="card">
+            <h3>Revenue</h3>
+            <p class="metric">$1.28M</p>
+            <p class="positive">+12.4% from last month</p>
+          </article>
+          <article class="card">
+            <h3>Active users</h3>
+            <p class="metric">18,642</p>
+            <p class="positive">+8.1% from last month</p>
+          </article>
+          <article class="card">
+            <h3>Conversion rate</h3>
+            <p class="metric">6.8%</p>
+            <p class="positive">+1.2% from last month</p>
+          </article>
+          <article class="card">
+            <h3>Open tickets</h3>
+            <p class="metric">142</p>
+            <p class="neutral">23 require attention</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reports" aria-labelledby="reports-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Reports</p>
+            <h2 id="reports-heading">Recent activity</h2>
+          </div>
+          <div class="search">
+            <label for="reportSearch">Search reports</label>
+            <input id="reportSearch" type="search" placeholder="Search by name">
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Recent enterprise reports</caption>
+            <thead>
+              <tr>
+                <th scope="col">Report</th>
+                <th scope="col">Owner</th>
+                <th scope="col">Updated</th>
+                <th scope="col">Status</th>
+                <th scope="col"><span class="sr-only">Action</span></th>
+              </tr>
+            </thead>
+            <tbody id="reportTable">
+              <tr>
+                <th scope="row">Quarterly Revenue</th>
+                <td>Finance</td>
+                <td>Today</td>
+                <td><span class="status complete">Complete</span></td>
+                <td><button class="link-btn view-btn" type="button">View</button></td>
+              </tr>
+              <tr>
+                <th scope="row">Customer Growth</th>
+                <td>Marketing</td>
+                <td>Yesterday</td>
+                <td><span class="status complete">Complete</span></td>
+                <td><button class="link-btn view-btn" type="button">View</button></td>
+              </tr>
+              <tr>
+                <th scope="row">Support Performance</th>
+                <td>Operations</td>
+                <td>Sep 25, 2026</td>
+                <td><span class="status review">In review</span></td>
+                <td><button class="link-btn view-btn" type="button">View</button></td>
+              </tr>
+              <tr>
+                <th scope="row">Product Adoption</th>
+                <td>Product</td>
+                <td>Sep 24, 2026</td>
+                <td><span class="status scheduled">Scheduled</span></td>
+                <td><button class="link-btn view-btn" type="button">View</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="team" aria-labelledby="team-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Team</p>
+            <h2 id="team-heading">Team members</h2>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <article class="person">
+            <div class="avatar" aria-hidden="true">AM</div>
+            <div><h3>Aarav Mehta</h3><p>Product Manager</p></div>
+          </article>
+          <article class="person">
+            <div class="avatar" aria-hidden="true">SK</div>
+            <div><h3>Sofia Khan</h3><p>Data Analyst</p></div>
+          </article>
+          <article class="person">
+            <div class="avatar" aria-hidden="true">RJ</div>
+            <div><h3>Rohan Joshi</h3><p>Engineering Lead</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="settings" aria-labelledby="settings-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Settings</p>
+            <h2 id="settings-heading">Notification preferences</h2>
+          </div>
+        </div>
+
+        <form id="settingsForm">
+          <fieldset>
+            <legend>Email notifications</legend>
+            <div class="form-row">
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" autocomplete="email"
+                     required aria-describedby="emailHelp">
+              <small id="emailHelp">Use your company email address.</small>
+            </div>
+            <div class="checkbox-row">
+              <input id="weekly" name="weekly" type="checkbox" checked>
+              <label for="weekly">Send me a weekly performance summary</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Report frequency</legend>
+            <div class="form-row">
+              <label for="frequency">Choose frequency</label>
+              <select id="frequency" name="frequency">
+                <option value="daily">Daily</option>
+                <option value="weekly" selected>Weekly</option>
+                <option value="monthly">Monthly</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <button class="btn primary" type="submit">Save preferences</button>
+          <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="accessibility" aria-labelledby="accessibility-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Accessibility</p>
+            <h2 id="accessibility-heading">Accessible by design</h2>
+          </div>
+        </div>
+        <article class="info-box">
+          <p>This project uses semantic landmarks, labeled form controls, table headers, keyboard-friendly controls, visible focus indicators, and accessible dialogs.</p>
+          <p>Use <kbd>Tab</kbd> to navigate and <kbd>Esc</kbd> to close a dialog.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Enterprise Analytics Dashboard.</p>
+  </footer>
+
+  <dialog id="reportDialog" aria-labelledby="dialogTitle">
+    <form method="dialog" id="reportForm" class="dialog-card">
+      <button class="close-btn" value="cancel" aria-label="Close dialog">&times;</button>
+      <h2 id="dialogTitle">Create a report</h2>
+      <p>Enter the report details.</p>
+
+      <div class="form-row">
+        <label for="reportName">Report name</label>
+        <input id="reportName" name="reportName" type="text" minlength="3" required
+               aria-describedby="reportHelp">
+        <small id="reportHelp">Minimum 3 characters.</small>
+      </div>
+
+      <div class="form-row">
+        <label for="reportType">Report type</label>
+        <select id="reportType" name="reportType" required>
+          <option value="">Select a type</option>
+          <option>Revenue</option>
+          <option>Customer Growth</option>
+          <option>Support Performance</option>
+        </select>
+      </div>
+
+      <div class="dialog-actions">
+        <button class="btn secondary" value="cancel">Cancel</button>
+        <button class="btn primary" id="createReport" value="default">Create report</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="profileDialog" aria-labelledby="profileTitle">
+    <form method="dialog" class="dialog-card">
+      <button class="close-btn" value="cancel" aria-label="Close profile dialog">&times;</button>
+      <h2 id="profileTitle">Profile</h2>
+      <p>Enterprise Analytics workspace profile.</p>
+      <div class="dialog-actions">
+        <button class="btn primary" value="cancel">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
